@@ -25,10 +25,11 @@ typedef struct stack_s
 } t_stack;
 
 /**
- * struct b_s - The variables
+ * struct b_s -  variables -args, file, line con
  * @arguments: value
  * @con: line con
  * @fili: note change stack
+ * Description: carries values through the program
  */
 typedef struct b_s
 {
