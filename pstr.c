@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * func_pstr - prints the string starting at the top of the stack,
+ * func_pstr - This function prints string starting at stack top,
  * followed by a new
  * @head: stack head
  * @counter: line_num

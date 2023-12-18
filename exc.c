@@ -1,10 +1,10 @@
 #include "monty.h"
 /**
-* exc - executes the opcode
-* @stack: head linked list - stack
+* exc - executes the operactioncode
+* @stack: this is the head linked list - stack
 * @counter: line_counter
-* @file: poiner to monty file
-* @con: line content
+* @file: the pointer which points to monty file
+* @con: line con
 * Return: no return
 */
 int exc(char *con, t_stack **stack, unsigned int counter, FILE *file)
@@ -46,7 +46,7 @@ int exc(char *con, t_stack **stack, unsigned int counter, FILE *file)
         { fprintf(stderr, "L%d: unknown instruction %s\n", counter, op);
                 fclose(file);
                 free(con);
-                free_stack(*stack);
+                f_stack(*stack);
                 exit(EXIT_FAILURE); }
         return (1);
 }

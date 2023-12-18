@@ -12,7 +12,7 @@ void func_pint(t_stack **head, unsigned int counter)
                 fprintf(stderr, "L%u: can't pint, stack empty\n", counter);
                 fclose(b.file);
                 free(b.con);
-                free_stack(*head);
+                f_stack(*head);
                 exit(EXIT_FAILURE);
         }
         printf("%d\n", (*head)->n);

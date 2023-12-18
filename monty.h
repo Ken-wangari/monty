@@ -11,11 +11,11 @@
 /**
  * struct stack_s - The doubly linked list rep of a stack
  * @n: integer
- * @previous: This points to the prev element of the stack or the queue
- * @nxt: Nxt points to the next element of the stack or the queue
+ * @previous: This points to the prev element
+ * @nxt: Nxt points to the next element
  *
- * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO Alx software engineering - python project
+ * Description: doubly linked list of a node structure
+ * Alx software engineering - python project  LIFO, FIFO project
  */
 typedef struct stack_s
 {
@@ -25,11 +25,12 @@ typedef struct stack_s
 } t_stack;
 
 /**
- * struct b_s -  variables -args, file, line con
+ * struct b_s -  This are the variables
  * @arguments: value
  * @con: line con
  * @fili: note change stack
  * Description: carries values through the program
+ * Alx software engineering - python project  LIFO, FIFO project
  */
 typedef struct b_s
 {
@@ -40,21 +41,21 @@ typedef struct b_s
 } bus_t;
 extern bus_t b;
 /**
- * struct instruction_s - opcode and its function
+ * struct inst_s - opcode and its function
  * operactioncode: the opcode
- * @f: function to handle the opcode
- * Description: the opcode and its function
- * for stack, queues, LIFO, FIFO Alx software engineering - python project
+ * @f: function that handles the operactioncode
+ * Description: This is the operactioncode and its function
+ * Alx software engineering - python project  LIFO, FIFO project
  */
-typedef struct instruction_s
+typedef struct inst_s
 {
         char *operactioncode;
         void (*f) (t_stack **stack, unsigned int line_num);
 } instruction_t;
 
-void func_push(t_stack **head, unsigned int number);
-void func_pall(t_stack **head, unsigned int number);
-void func_pint(t_stack **head, unsigned int number);
+void func_push(t_stack **head, unsigned int num);
+void func_pall(t_stack **head, unsigned int num);
+void func_pint(t_stack **head, unsigned int num);
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *con);
@@ -66,7 +67,7 @@ void func_pchar(t_stack **head, unsigned int counter);
 void func_pstr(t_stack **head, unsigned int counter);
 void func_rotl(t_stack **head, unsigned int counter);
 void func_rotr(t_stack **head, __attribute__((unused)) unsigned int counter);
-void free_stack(t_stack *head);
+void f_stack(t_stack *head);
 void func_pop(t_stack **head, unsigned int counter);
 void func_swap(t_stack **head, unsigned int counter);
 void func_add(t_stack **head, unsigned int counter);

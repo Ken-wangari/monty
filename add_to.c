@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
- * func_add - This adds the top two elements of the stack.
+ * func_add - This adds the top two elements 
  * @head: stack head
- * @counter: line_number
+ * @counter: line_num
  * Return: no return
 */
 void func_add(t_stack **head, unsigned int counter)
@@ -21,7 +21,7 @@ void func_add(t_stack **head, unsigned int counter)
                 fprintf(stderr, "L%d: can't add, stack too short\n", counter);
                 fclose(b.file);
                 free(b.con);
-                free_stack(*head);
+                f_stack(*head);
                 exit(EXIT_FAILURE);
         }
         h = *head;

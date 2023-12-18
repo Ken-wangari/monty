@@ -21,7 +21,7 @@ void func_mod(t_stack **head, unsigned int counter)
                 fprintf(stderr, "L%d: can't mod, stack too short\n", counter);
                 fclose(b.file);
                 free(b.con);
-                free_stack(*head);
+                f_stack(*head);
                 exit(EXIT_FAILURE);
         }
         h = *head;
@@ -30,7 +30,7 @@ void func_mod(t_stack **head, unsigned int counter)
                 fprintf(stderr, "L%d: division by zero\n", counter);
                 fclose(b.file);
                 free(b.con);
-                free_stack(*head);
+                f_stack(*head);
                 exit(EXIT_FAILURE);
         }
         aux = h->nxt->n % h->n;

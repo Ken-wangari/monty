@@ -21,13 +21,13 @@ void func_push(t_stack **head, unsigned int counter)
                 { fprintf(stderr, "L%d: usage: push integer\n", counter);
                         fclose(b.file);
                         free(b.con);
-                        free_stack(*head);
+                        f_stack(*head);
                         exit(EXIT_FAILURE); }}
         else
         { fprintf(stderr, "L%d: usage: push integer\n", counter);
                 fclose(b.file);
                 free(b.con);
-                free_stack(*head);
+                f_stack(*head);
                 exit(EXIT_FAILURE); }
         n = atoi(b.arg);
         if (b.fili == 0)
